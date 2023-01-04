@@ -1,0 +1,12 @@
+.heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.img {
+  height: 120px;
+  width: 120px;
+}
