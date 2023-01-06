@@ -1,10 +1,13 @@
+"use client";
 import "./globals.css";
 import Link from "next/link";
 import { Inter } from "@next/font/google";
+import HeroesContext from "../context/heroesContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
+
   return (
     <>
       <html lang="en">
@@ -23,7 +26,9 @@ export default function RootLayout({ children }) {
               </li>
             </ul>
           </div>
-          <main>{children}</main>
+          <HeroesContext>
+            <main>{children}</main>
+          </HeroesContext>
         </body>
       </html>
     </>

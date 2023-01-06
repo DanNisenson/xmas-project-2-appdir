@@ -5,8 +5,12 @@
   gap: 1rem;
 }
 
-
 .img {
   height: 250px;
   width: auto;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 1rem;
 }
